@@ -1,0 +1,1330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdnjs.cloudflare.com https://is.gd; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src * data: blob:; connect-src 'self'; frame-ancestors 'none';">
+<meta http-equiv="X-Frame-Options" content="DENY">
+<meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<script src="/analytics.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lz-string/1.5.0/lz-string.min.js" integrity="sha384-q8X//+0K/7kND//Lh8mKNyTzGofq/5v4S10RzO0w/1TzRzMbXn3hXh14d/B7b19+" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-is1ls2rgO/OqpazGZ8y0BnzA1B7O/jM1n/1v0p4BvH9k3XhZ1D1mO/k8z+R0A5xH7D3m0XwMv7cQ4U5zQ0O1w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<title>Free Link in Bio Builder | Tradesala</title>
+
+<meta name="description" content="Create a free, custom link-in-bio page for your brand instantly. Includes live preview, premium themes, custom colors, and automatic QR codes. No signup required." />
+<meta name="keywords" content="link in bio free, linktree alternative India, bio link builder for sellers, instagram bio link tool, custom link page free, e-commerce bio link, QR code generator free"/>
+<link rel="canonical" href="https://tools.tradesala.store/tools/bio-link.html"/>
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
+<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
+<meta http-equiv="content-language" content="en-IN"/>
+<meta name="theme-color" content="#07070f"/>
+<meta name="author" content="Tradesala Vendor Tools"/>
+
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Free Link in Bio Builder | Tradesala"/>
+<meta property="og:description" content="Create a free, custom link-in-bio page for your brand instantly. Includes live preview, premium themes, custom colors, and automatic QR codes."/>
+<meta property="og:url" content="https://tools.tradesala.store/tools/bio-link.html"/>
+<meta property="og:site_name" content="Tradesala Vendor Tools"/>
+<meta property="og:locale" content="en_IN"/>
+<meta property="og:image" content="https://tools.tradesala.store/assets/bio-link-og.png"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:image:type" content="image/png"/>
+<meta property="og:image:alt" content="Link in Bio Builder — Tradesala Vendor Tools"/>
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="@tradesala"/>
+<meta name="twitter:creator" content="@tradesala"/>
+<meta name="twitter:title" content="Free Link in Bio Builder | Tradesala"/>
+<meta name="twitter:description" content="Create a free, custom link-in-bio page for your brand instantly. Includes live preview, premium themes, custom colors, and automatic QR codes."/>
+<meta name="twitter:image" content="https://tools.tradesala.store/assets/bio-link-og.png"/>
+
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Figtree:wght@300;400;500;600;700;900&display=swap" rel="stylesheet"/>
+
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --red:#f41212;--red2:#ff4444;
+  --red-glow:rgba(244,18,18,0.35);--red-soft:rgba(244,18,18,0.12);
+  --glass-bg:rgba(255,255,255,0.055);--glass-border:rgba(255,255,255,0.13);
+  --text:rgba(255,255,255,0.95);--text-2:rgba(255,255,255,0.55);--text-3:rgba(255,255,255,0.28);
+  --bg:#07070f;
+  color-scheme: dark;
+}
+html{scroll-behavior:smooth}
+body{font-family:'Figtree',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;overflow-x:hidden;transition:background-color 0.6s cubic-bezier(0.4, 0, 0.2, 1), color 0.5s cubic-bezier(0.4, 0, 0.2, 1);}
+.panel, nav.main-nav, footer { transition: background-color 0.55s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.55s cubic-bezier(0.4, 0, 0.2, 1), color 0.45s cubic-bezier(0.4, 0, 0.2, 1); }
+.faq-item { transition: background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.4s cubic-bezier(0.4, 0, 0.2, 1), color 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.4s; }
+
+/* ── BACKGROUND ── */
+.bg-scene{position:fixed;inset:0;z-index:0;overflow:hidden;pointer-events:none}
+.orb{position:absolute;border-radius:50%;filter:blur(90px);animation:float 20s ease-in-out infinite}
+.orb-1{width:600px;height:600px;top:-200px;right:-100px;background:radial-gradient(circle,rgba(244,18,18,0.20) 0%,transparent 70%);animation-duration:25s}
+.orb-2{width:500px;height:500px;bottom:-150px;left:-100px;background:radial-gradient(circle,rgba(180,10,10,0.16) 0%,transparent 70%);animation-duration:30s;animation-delay:-10s}
+.grid-overlay{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,0.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.025) 1px,transparent 1px);background-size:60px 60px;mask-image:radial-gradient(ellipse 80% 80% at 50% 50%,black 40%,transparent 100%)}
+@keyframes float{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(30px,-40px) scale(1.05)}66%{transform:translate(-20px,30px) scale(0.97)}}
+
+/* ── NAV & FOOTER ── */
+nav.main-nav{position:sticky;top:0;z-index:100;padding:0 40px;height:64px;display:flex;align-items:center;justify-content:space-between;background:rgba(7,7,15,0.75);backdrop-filter:blur(28px) saturate(180%);-webkit-backdrop-filter:blur(28px) saturate(180%);border-bottom:1px solid var(--glass-border);}
+nav.main-nav .logo{display:flex;align-items:center;gap:10px}
+nav.main-nav .logo-text{font-family:'Outfit',sans-serif;font-weight:700;font-size:16px;color:var(--text)}
+nav.main-nav .logo-text span{color:var(--red)}
+nav.main-nav .back-btn{display:flex;align-items:center;gap:6px;padding:8px 16px;border-radius:100px;border:1px solid var(--glass-border);background:var(--glass-bg);font-size:13px;color:var(--text-2);text-decoration:none;transition:all 0.2s;}
+nav.main-nav .back-btn:hover{border-color:var(--red);color:var(--text);background:var(--red-soft)}
+footer { border-top: 1px solid var(--glass-border); padding: 40px; text-align: center; background: rgba(7, 7, 15, 0.8); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); position: relative; z-index: 10; }
+.footer-logo { font-family: 'Outfit', sans-serif; font-weight: 800; font-size: 18px; letter-spacing: -0.5px; margin-bottom: 8px; color: rgba(255, 255, 255, 0.95); }
+.footer-logo span { color: var(--red); }
+footer p { font-size: 13px; color: var(--text-3); }
+footer a { color: rgba(244, 18, 18, 0.7); text-decoration: none; }
+footer a:hover { color: var(--red); }
+
+/* ── LAYOUT ── */
+.page-inner{max-width:1160px;margin:0 auto;padding:0 24px 100px;position:relative;z-index:1}
+.tool-wrap{display:grid;grid-template-columns:1fr 380px;gap:32px;align-items:start;}
+
+/* ── TOOL HEADER ── */
+.tool-header{padding:56px 0 40px;animation:fadeUp 0.6s 0.15s cubic-bezier(0.16,1,0.3,1) both}
+.breadcrumb{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.tool-header h1{font-family:'Outfit',sans-serif;font-size:clamp(32px,5vw,52px);font-weight:800;letter-spacing:-2px;line-height:1.05;margin-bottom:12px}
+.tool-header h1 span{background:linear-gradient(90deg,var(--red),#ff6060);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.tool-header p{font-size:16px;color:var(--text-2);font-weight:300;line-height:1.7}
+
+/* ── PANELS & EDITOR ── */
+.panel{position:relative;overflow:hidden;background:var(--glass-bg);border:1px solid var(--glass-border);border-radius:22px;backdrop-filter:blur(28px);padding:28px 30px;}
+.panel::before{content:'';position:absolute;top:0;left:10%;right:10%;height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.25),transparent);}
+.panel-title{font-family:'Outfit',sans-serif;font-size:12px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--text-3);margin-bottom:24px;display:flex;align-items:center;gap:8px;}
+.panel-title::after{content:'';flex:1;height:1px;background:var(--glass-border)}
+
+.field{margin-bottom:16px}
+.field label{display:flex;justify-content:space-between;font-size:12px;font-weight:600;color:var(--text-3);letter-spacing:0.5px;text-transform:uppercase;margin-bottom:7px}
+.field input[type=text], .field textarea, .field select {width:100%;padding:12px 14px;background:rgba(255,255,255,0.06);border:1px solid var(--glass-border);border-radius:10px;color:var(--text);font-family:'Figtree',sans-serif;font-size:14px;outline:none;transition:all 0.2s;}
+.field input[type=text]:focus, .field textarea:focus, .field select:focus {border-color:rgba(244,18,18,0.45);background:rgba(255,255,255,0.09);box-shadow:0 0 0 3px rgba(244,18,18,0.08)}
+.field textarea{resize:vertical;min-height:80px}
+.field select{appearance:none;cursor:pointer;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='rgba(255,255,255,0.4)' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;padding-right:36px}
+.field select option{background:#0a0a0f;color:#fff;}
+.field input[type=range] {width:100%;-webkit-appearance:none;appearance:none;height:4px;border-radius:2px;background:rgba(255,255,255,0.12);outline:none;cursor:pointer;margin-top:8px;}
+.field input[type=range]::-webkit-slider-thumb {-webkit-appearance:none;appearance:none;width:16px;height:16px;border-radius:50%;background:var(--red2);box-shadow:0 0 8px var(--red-glow);cursor:pointer;}
+
+.pic-row {display: flex; gap: 10px; align-items: stretch;}
+.pic-row input[type="text"] {flex: 1;}
+.pic-upload-btn {position: relative; display: flex; align-items: center; justify-content: center; padding: 0 26px; border: none; background: linear-gradient(135deg, var(--red), #c00) !important; border-radius: 10px; cursor: pointer; color: #ffffff !important; font-family: 'Outfit', sans-serif; font-size: 14px; font-weight: 800; transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: 0 4px 16px rgba(244, 18, 18, 0.35) !important; white-space: nowrap; overflow: hidden;}
+.pic-upload-btn:hover {transform: translateY(-2px); box-shadow: 0 8px 24px rgba(244, 18, 18, 0.5) !important;}
+.pic-upload-btn:active {transform: translateY(0);}
+.pic-upload-btn input[type="file"] {position: absolute; inset: 0; opacity: 0; cursor: pointer;}
+
+/* Theme Grid */
+.theme-grid{display:grid;grid-template-columns:repeat(3, 1fr);gap:10px;}
+.theme-card{border:1px solid var(--glass-border);border-radius:12px;padding:12px 8px;text-align:center;cursor:pointer;transition:0.2s;background:rgba(255,255,255,0.02)}
+.theme-card:hover{background:rgba(255,255,255,0.06)}
+.theme-card.active{border-color:rgba(244,18,18,0.5);background:rgba(244,18,18,0.1);box-shadow:0 0 16px rgba(244,18,18,0.15)}
+.theme-card .tc-circle{width:28px;height:28px;border-radius:50%;margin:0 auto 8px;border:1px solid rgba(255,255,255,0.2)}
+.theme-card .tc-name{font-size:11px;font-weight:600;color:var(--text-2);line-height:1.2;}
+.theme-card.active .tc-name{color:var(--text)}
+
+/* Custom Color Picker Section */
+.custom-colors-wrap {display: none; flex-direction: column; gap: 16px; margin-top: 16px; padding: 20px; background: rgba(0,0,0,0.2); border-radius: 12px; border: 1px solid var(--glass-border);}
+.custom-colors-wrap.show {display: flex; animation: fadeUp 0.3s ease;}
+.cc-section-label {font-size: 11px; font-weight: 700; color: var(--text-3); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;}
+.cc-grid {display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 12px;}
+.color-field {display: flex; align-items: center; gap: 10px; background: rgba(255,255,255,0.03); padding: 6px; border-radius: 10px; border: 1px solid var(--glass-border);}
+.color-field input[type="color"] {width: 28px; height: 28px; border: none; border-radius: 6px; cursor: pointer; padding: 0; background: transparent;}
+.color-field input[type="color"]::-webkit-color-swatch-wrapper {padding: 0;}
+.color-field input[type="color"]::-webkit-color-swatch {border: 1px solid rgba(255,255,255,0.2); border-radius: 6px;}
+.color-field label {margin-bottom: 0; text-transform: none; letter-spacing: 0; color: var(--text-2); font-size: 12px;}
+
+/* Links List (Drag & Drop) */
+.link-list{display:flex;flex-direction:column;gap:14px;margin-bottom:20px}
+.link-item{background:rgba(0,0,0,0.2);border:1px solid var(--glass-border);border-radius:14px;padding:16px 56px 16px 44px;position:relative;transition:transform 0.2s, box-shadow 0.2s;}
+.link-item:hover{border-color:rgba(255,255,255,0.25)}
+.link-item.dragging{opacity: 0.4; border: 2px dashed var(--red); transform: scale(0.98);}
+.drag-handle{position:absolute;left:0;top:0;bottom:0;width:36px;display:flex;align-items:center;justify-content:center;cursor:grab;color:var(--text-3);font-size:20px;line-height:1;}
+.drag-handle:active{cursor:grabbing}
+.remove-link{position:absolute;top:16px;right:16px;background:rgba(244,18,18,0.15);color:#ff6666;border:1px solid rgba(244,18,18,0.3);border-radius:8px;width:26px;height:26px;cursor:pointer;font-size:14px;display:flex;align-items:center;justify-content:center;transition:0.2s;z-index:5;}
+.remove-link:hover{background:var(--red);color:white}
+.add-link-btn{width:100%;padding:12px;border-radius:10px;border:1px dashed var(--glass-border);background:transparent;color:var(--text-2);font-family:'Outfit',sans-serif;font-weight:600;font-size:14px;cursor:pointer;transition:0.2s}
+.add-link-btn:hover{border-color:rgba(255,255,255,0.4);color:var(--text);background:rgba(255,255,255,0.05)}
+
+/* Generate Box */
+.gen-box{background:linear-gradient(135deg, rgba(244,18,18,0.1), rgba(10,10,20,0.4));border:1px solid rgba(244,18,18,0.3);border-radius:16px;padding:24px;margin-top:24px;text-align:center;}
+.gen-btn{width:100%;padding:14px;border-radius:12px;border:none;background:linear-gradient(135deg,var(--red),#c00);color:white;font-family:'Outfit',sans-serif;font-size:16px;font-weight:800;cursor:pointer;transition:0.2s;box-shadow:0 8px 24px rgba(244,18,18,0.35)}
+.gen-btn:hover{transform:translateY(-2px);box-shadow:0 12px 32px rgba(244,18,18,0.5)}
+.gen-btn:active{transform:translateY(0)}
+.gen-btn:disabled{opacity:0.6;cursor:wait;transform:none}
+
+.res-container{margin-top:20px;display:none;animation:fadeUp 0.4s ease}
+.url-box{display:flex;align-items:center;background:rgba(0,0,0,0.4);border:1px solid var(--glass-border);border-radius:10px;padding:6px;margin-bottom:16px}
+.url-box input{flex:1;background:none;border:none;color:var(--text);font-family:'Figtree',sans-serif;font-size:13px;font-weight:600;padding:8px 10px;outline:none}
+.url-copy-btn{background:rgba(255,255,255,0.1);border:none;color:white;padding:8px 14px;border-radius:8px;font-family:'Figtree',sans-serif;font-size:12px;font-weight:600;cursor:pointer;transition:0.2s}
+.url-copy-btn:hover{background:rgba(255,255,255,0.2)}
+.qr-wrapper{background:white;padding:12px;border-radius:12px;display:inline-block;margin:0 auto 12px;}
+#qr-code img{display:block;margin:0 auto;}
+.qr-dl-btn{display:inline-flex;align-items:center;gap:8px;padding:8px 16px;background:transparent;border:1px solid var(--glass-border);color:var(--text-2);border-radius:100px;font-size:12px;font-weight:600;cursor:pointer;transition:0.2s;text-decoration:none}
+.qr-dl-btn:hover{border-color:var(--text);color:var(--text);background:rgba(255,255,255,0.05)}
+
+/* Disclaimer */
+.disclaimer{background:rgba(255,200,60,0.06);border:1px solid rgba(255,200,60,0.18);border-radius:12px;padding:14px 16px;margin-top:24px;font-size:12px;color:rgba(255,220,100,0.85);line-height:1.6;}
+.disclaimer strong{color:rgba(255,220,80,0.95)}
+
+/* ── PREVIEW PHONE MOCKUP ── */
+.preview-wrap{position:sticky;top:90px;}
+.phone-mockup{width:100%;max-width:360px;margin:0 auto;aspect-ratio:9/19;border:12px solid #14141c;border-radius:44px;overflow:hidden;position:relative;background:#000;box-shadow:0 24px 48px rgba(0,0,0,0.6), inset 0 0 0 2px rgba(255,255,255,0.1)}
+.phone-notch{position:absolute;top:0;left:50%;transform:translateX(-50%);width:110px;height:24px;background:#14141c;border-bottom-left-radius:16px;border-bottom-right-radius:16px;z-index:10;display:flex;justify-content:center;align-items:center}
+.phone-notch::after{content:'';width:30px;height:4px;background:rgba(255,255,255,0.1);border-radius:10px}
+.preview-content{position:absolute;inset:0;overflow-y:auto;scrollbar-width:none;}
+.preview-content::-webkit-scrollbar{display:none}
+
+/* ── THEMES (Used in Preview and Final Viewer) ── */
+.bio-page{min-height:100%;padding:50px 24px 40px;display:flex;flex-direction:column;align-items:center;text-align:center;transition:background 0.4s, color 0.4s;position:relative;z-index:1}
+.bio-pic{width:96px;height:96px;border-radius:50%;object-fit:cover;margin-bottom:16px;background:rgba(255,255,255,0.1);box-shadow:0 8px 24px rgba(0,0,0,0.2);border:2px solid transparent;transition:all 0.3s;}
+.bio-name{font-family:'Outfit',sans-serif;font-size:24px;font-weight:800;margin-bottom:6px;line-height:1.2;word-break:break-word;transition:all 0.3s;}
+.bio-desc{font-size:15px;opacity:0.8;margin-bottom:32px;line-height:1.5;max-width:400px;word-break:break-word;transition:all 0.3s;}
+.bio-links{width:100%;max-width:400px;display:flex;flex-direction:column;gap:14px;position:relative;z-index:2}
+.bio-btn{display:flex;align-items:center;justify-content:center;width:100%;padding:16px 20px;text-decoration:none;font-family:'Figtree',sans-serif;font-weight:700;font-size:15px;transition:all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);line-height:1.3;position:relative;overflow:hidden;}
+.watermark{margin-top:auto;padding-top:40px;font-size:11px;opacity:0.5;text-decoration:none;color:inherit;font-family:'Outfit',sans-serif;font-weight:700;letter-spacing:1px}
+
+/* Existing Hardcoded Themes */
+.theme-dark{background:#0a0a0c;color:#f8fafc}
+.theme-dark .bio-pic{border-color:rgba(255,255,255,0.1)}
+.theme-dark .bio-btn{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:14px;color:#fff;box-shadow:0 4px 12px rgba(0,0,0,0.2)}
+.theme-dark .bio-btn:hover{background:rgba(255,255,255,0.12);transform:translateY(-2px);border-color:rgba(255,255,255,0.25)}
+
+.theme-light{background:#f8fafc;color:#0f172a}
+.theme-light .bio-pic{border-color:#e2e8f0;box-shadow:0 8px 24px rgba(0,0,0,0.06)}
+.theme-light .bio-btn{background:#ffffff;border:1px solid #cbd5e1;border-radius:14px;color:#0f172a;box-shadow:0 4px 12px rgba(0,0,0,0.04)}
+.theme-light .bio-btn:hover{border-color:#94a3b8;transform:translateY(-2px);box-shadow:0 8px 16px rgba(0,0,0,0.08)}
+
+@keyframes bgMesh{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+.theme-glass{background:linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);background-size:400% 400%;animation:bgMesh 15s ease infinite;color:#ffffff}
+.theme-glass .bio-pic{border-color:rgba(255,255,255,0.4);box-shadow:0 8px 32px rgba(0,0,0,0.2)}
+.theme-glass .bio-btn{background:rgba(255,255,255,0.15);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,0.3);border-radius:24px;color:#fff;box-shadow:0 8px 32px rgba(0,0,0,0.1)}
+.theme-glass .bio-btn:hover{background:rgba(255,255,255,0.25);transform:translateY(-3px);border-color:rgba(255,255,255,0.5)}
+
+.theme-neo{background:#f4f4f0;color:#000000}
+.theme-neo .bio-pic{border:3px solid #000;border-radius:0;box-shadow:4px 4px 0px #000}
+.theme-neo .bio-name{font-weight:900;text-transform:uppercase;letter-spacing:-1px}
+.theme-neo .bio-btn{background:#ffeb3b;border:3px solid #000;border-radius:0;color:#000;font-weight:900;text-transform:uppercase;letter-spacing:0.5px;box-shadow:4px 4px 0px #000}
+.theme-neo .bio-btn:hover{transform:translate(-2px, -2px);box-shadow:6px 6px 0px #000}
+
+.theme-brand{background:#07070f;color:#ffffff}
+.theme-brand .bio-pic{border-color:rgba(244,18,18,0.5);box-shadow:0 0 24px rgba(244,18,18,0.3)}
+.theme-brand .bio-btn{background:linear-gradient(90deg, #f41212, #c00);border:none;border-radius:12px;color:#ffffff;font-weight:800;box-shadow:0 6px 20px rgba(244,18,18,0.25)}
+.theme-brand .bio-btn:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(244,18,18,0.4)}
+
+.theme-cyber{background:#120422;color:#0ff}
+.theme-cyber .bio-name{color:#f0f;text-shadow:0 0 10px rgba(255,0,255,0.5)}
+.theme-cyber .bio-pic{border-color:#f0f;box-shadow:0 0 15px rgba(255,0,255,0.4)}
+.theme-cyber .bio-btn{background:transparent;border:2px solid #0ff;border-radius:0;color:#0ff;box-shadow:0 0 8px rgba(0,255,255,0.3), inset 0 0 8px rgba(0,255,255,0.2);text-transform:uppercase;letter-spacing:1px}
+.theme-cyber .bio-btn:hover{background:rgba(0,255,255,0.1);text-shadow:0 0 5px #0ff;box-shadow:0 0 12px rgba(0,255,255,0.6), inset 0 0 12px rgba(0,255,255,0.4)}
+
+.theme-pastel{background:#fdf2f8;color:#475569}
+.theme-pastel .bio-pic{border-color:#fbcfe8}
+.theme-pastel .bio-btn{background:#fbcfe8;border:none;border-radius:24px;color:#831843;box-shadow:0 4px 10px rgba(251,207,232,0.5)}
+.theme-pastel .bio-btn:hover{background:#f9a8d4;transform:scale(1.03)}
+
+.theme-mono{background:#ffffff;color:#000000}
+.theme-mono .bio-pic{border:1px solid #000}
+.theme-mono .bio-btn{background:#fff;border:1px solid #000;border-radius:0;color:#000}
+.theme-mono .bio-btn:hover{background:#000;color:#fff}
+
+.theme-ocean{background:linear-gradient(180deg, #0f172a, #0284c7);color:#e0f2fe}
+.theme-ocean .bio-pic{border-color:#38bdf8}
+.theme-ocean .bio-btn{background:rgba(255,255,255,0.1);border:1px solid rgba(56,189,248,0.3);border-radius:8px;color:#bae6fd;backdrop-filter:blur(5px)}
+.theme-ocean .bio-btn:hover{background:rgba(56,189,248,0.2)}
+
+.theme-sunset{background:linear-gradient(135deg, #f59e0b, #f43f5e);color:#fff}
+.theme-sunset .bio-pic{border-color:rgba(255,255,255,0.5)}
+.theme-sunset .bio-btn{background:rgba(0,0,0,0.2);border:none;border-radius:100px;color:#fff;backdrop-filter:blur(5px)}
+.theme-sunset .bio-btn:hover{background:rgba(0,0,0,0.3);transform:translateY(-2px)}
+
+.theme-forest{background:linear-gradient(135deg, #14532d, #064e3b);color:#ecfdf5}
+.theme-forest .bio-pic{border-color:#34d399}
+.theme-forest .bio-btn{background:rgba(255,255,255,0.05);border:1px solid rgba(52,211,153,0.4);border-radius:12px;color:#a7f3d0;backdrop-filter:blur(4px)}
+.theme-forest .bio-btn:hover{background:rgba(52,211,153,0.15);border-color:#34d399;transform:translateY(-2px)}
+
+/* Theme 12: Parametric Custom Engine */
+.theme-custom {
+  background: var(--c-bg, #1a1a1a);
+  color: var(--c-tx, #ffffff);
+  font-family: var(--c-f, 'Figtree'), sans-serif !important;
+}
+.theme-custom .bio-name, .theme-custom .bio-desc, .theme-custom .bio-btn {
+  font-family: inherit;
+}
+.theme-custom .bio-pic { 
+  border: var(--c-bw, 0px) solid var(--c-img-bc, transparent);
+  border-radius: var(--c-ir, 50%);
+}
+.theme-custom .bio-btn {
+  background: var(--c-btn-bg, #ffffff);
+  color: var(--c-btn-tx, #000000);
+  border: var(--c-btn-border, none);
+  border-radius: var(--c-br, 12px);
+}
+.theme-custom .bio-btn:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+}
+
+/* ── LEGAL DISCLAIMER & FAQ ── */
+.legal-box { margin-top:60px; padding:24px; background:rgba(251,191,36,0.06); border:1px solid rgba(251,191,36,0.2); border-radius:16px; text-align:left; }
+.legal-box h3 { font-family:'Outfit',sans-serif; font-size:14px; font-weight:700; text-transform:uppercase; letter-spacing:1px; margin-bottom:8px; color:#fcd34d; }
+.legal-box p { font-size:13px; color:rgba(253,230,138,0.85); line-height:1.6; }
+
+.faq-section{margin-top:24px;padding-bottom:60px}
+.faq-hdr{font-family:'Outfit',sans-serif;font-size:22px;font-weight:800;letter-spacing:-0.5px;margin-bottom:6px}
+.faq-hdr span{color:var(--red2)}
+.faq-sub{font-size:13px;color:var(--text-3);margin-bottom:22px;font-weight:300}
+.faq-item{background:var(--glass-bg);border:1px solid var(--glass-border);border-radius:14px;overflow:hidden;margin-bottom:8px;backdrop-filter:blur(14px)}
+.faq-q{width:100%;text-align:left;background:none;border:none;padding:16px 20px;font-family:'Figtree',sans-serif;font-size:14px;font-weight:600;color:var(--text);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.faq-q:hover{color:var(--red2)}
+.faq-icon{font-size:16px;flex-shrink:0;transition:transform .25s;color:var(--text-3)}
+.faq-item.open .faq-icon{transform:rotate(45deg);color:var(--red2)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease,padding .3s ease;font-size:13px;color:var(--text-2);line-height:1.75;padding:0 20px}
+.faq-item.open .faq-a{max-height:400px;padding:0 20px 16px}
+.faq-a strong{color:var(--text);display:inline}
+
+/* ── VIEWER LAYOUT (Pure Link-in-bio mode) ── */
+#app-viewer{display:none;position:absolute;inset:0;z-index:9999;min-height:100vh}
+
+/* ── GLASSMORPHISM TOAST ENGINE ── */
+.toast {
+  position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%) translateY(20px);
+  background: rgba(20, 20, 30, 0.75); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.15); color: #fff;
+  padding: 14px 28px; border-radius: 100px; font-family: 'Figtree', sans-serif; font-size: 13px; font-weight: 700;
+  opacity: 0; pointer-events: none; transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); z-index: 10000;
+  box-shadow: 0 16px 40px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.1);
+  white-space: nowrap;
+}
+.toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+.toast.toast-error { 
+  background: rgba(220, 38, 38, 0.85); 
+  border-color: rgba(255, 160, 160, 0.4); 
+  box-shadow: 0 16px 40px rgba(220, 38, 38, 0.3), inset 0 1px 0 rgba(255,255,255,0.2); 
+}
+
+/* ── THEME TOGGLE & SHARE PILL ── */
+.theme-switch { display: flex; align-items: center; justify-content: center; gap: 7px; cursor: pointer; flex-shrink: 0; user-select: none; background: none; border: none; padding: 0; margin: 0; }
+.theme-switch-track { position: relative; width: 52px; height: 28px; border-radius: 100px; background: linear-gradient(135deg, rgba(15, 15, 35, 0.85), rgba(20, 20, 50, 0.70)); border: 1px solid rgba(255, 255, 255, 0.14); box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.4); transition: background 0.4s, border-color 0.4s, box-shadow 0.4s; }
+.theme-switch-track:hover { border-color: rgba(255, 255, 255, 0.28); box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.4), 0 0 10px rgba(251, 191, 36, 0.18); }
+.theme-switch-knob { position: absolute; top: 3px; left: 3px; width: 20px; height: 20px; border-radius: 50%; background: radial-gradient(circle at 40% 35%, #fffbe6, #fde68a 60%, #fbbf24); box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35), 0 0 8px rgba(251, 191, 36, 0.55); transition: transform 0.38s, background 0.35s, box-shadow 0.35s; display: flex; align-items: center; justify-content: center; line-height: 1; padding: 0; margin: 0; text-align: center; }
+
+.share-pill { position: fixed; right: 24px; bottom: 32px; z-index: 200; display: flex; flex-direction: column; align-items: center; gap: 0; }
+.share-trigger { width: 50px; height: 50px; border-radius: 50%; background: linear-gradient(135deg, #ff3333, var(--red), #c40e0e); box-shadow: 0 4px 22px rgba(244, 18, 18, 0.55); border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; color: white; transition: all 0.25s; position: relative; z-index: 2; overflow: hidden; }
+.share-trigger::before { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(255, 255, 255, 0.28) 0%, transparent 55%); }
+.share-trigger::after { content: ''; position: absolute; top: -50%; left: -75%; width: 50%; height: 200%; background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.35), transparent); transform: skewX(-20deg); animation: shareShimmer 2.8s ease-in-out infinite; }
+@keyframes shareShimmer { 0%, 60%, 100% { left: -75%; opacity: 0; } 40% { left: 140%; opacity: 1; } }
+.share-trigger:hover { transform: scale(1.1); box-shadow: 0 6px 30px rgba(244, 18, 18, 0.65); }
+.share-trigger svg { position: relative; z-index: 1; }
+.share-options { display: flex; flex-direction: column; align-items: center; gap: 9px; padding-bottom: 12px; opacity: 0; visibility: hidden; transform: translateY(16px) scale(0.95); transition: opacity 0.3s, transform 0.35s, visibility 0.3s; pointer-events: none; }
+.share-pill.open .share-options { opacity: 1; visibility: visible; transform: translateY(0) scale(1); pointer-events: all; }
+.share-btn { width: 40px; height: 40px; border-radius: 50%; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; color: white; transition: transform 0.2s, box-shadow 0.2s; flex-shrink: 0; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.22), 0 0 0 1.5px rgba(255, 255, 255, 0.12); }
+.share-btn:hover { transform: scale(1.13); box-shadow: 0 4px 16px rgba(0, 0, 0, 0.30), 0 0 0 1.5px rgba(255, 255, 255, 0.18); }
+.share-fb { background: #1877f2; }
+.share-x { background: #0f0f0f; }
+.share-ig { background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); }
+.share-lnk { background: rgba(100, 100, 120, 0.5); border: 1px solid rgba(255, 255, 255, 0.25); backdrop-filter: blur(8px); }
+.share-lnk svg { width: 16px; height: 16px; }
+
+/* ── MOBILE OPTIMIZATION ── */
+@media(max-width:860px){
+  .tool-wrap{grid-template-columns:1fr; gap:24px;}
+  .page-inner{padding:0 16px 80px}
+  .preview-wrap{display:none} /* Hide mockup on mobile builder */
+  nav.main-nav{padding:0 20px}
+  .legal-box, .faq-section{padding:0 16px}
+  .theme-grid {grid-template-columns: 1fr 1fr;}
+}
+
+@media(max-width:600px){
+  .panel { padding: 24px 20px; }
+  .pic-upload-btn { padding: 0 16px; font-size: 12px; }
+  .theme-grid { grid-template-columns: 1fr 1fr; }
+  .cc-grid { grid-template-columns: 1fr; }
+  .link-item { padding: 16px 40px 16px 36px; }
+  .drag-handle { width: 30px; font-size: 18px; }
+  .remove-link { top: 12px; right: 12px; width: 24px; height: 24px; }
+  .toast { font-size: 12px; padding: 12px 20px; white-space: normal; text-align: center; width: 90%; }
+  .tool-header h1 { font-size: 32px; }
+  nav.main-nav { padding: 0 16px; }
+}
+
+/* ══════════════════════════════════════════════════════════
+   LIGHT MODE (Builder UI Only)
+══════════════════════════════════════════════════════════ */
+body.light {
+  --glass-bg: rgba(255, 255, 255, 0.90);
+  --glass-border: rgba(15, 23, 42, 0.12);
+  --text: #0f172a;
+  --text-2: #334155;
+  --text-3: #64748b;
+  --bg: #f8fafc;
+  --red-soft: rgba(244, 18, 18, 0.08);
+  color-scheme: light !important;
+}
+
+body.light #builder-container .bg-scene { background: var(--bg); opacity: 1; }
+body.light #builder-container .orb-1 { background: radial-gradient(circle, rgba(244, 18, 18, 0.15) 0%, transparent 70%); }
+body.light #builder-container .orb-2 { background: radial-gradient(circle, rgba(15, 23, 42, 0.08) 0%, transparent 70%); }
+body.light #builder-container .grid-overlay { background-image: linear-gradient(rgba(15, 23, 42, 0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(15, 23, 42, 0.04) 1px, transparent 1px); }
+
+body.light nav.main-nav { background: rgba(248, 250, 252, 0.90); border-bottom-color: rgba(15, 23, 42, 0.1); }
+body.light .logo-text { color: #0f172a; }
+body.light .back-btn { color: #475569; border-color: rgba(15, 23, 42, 0.15); background: rgba(255, 255, 255, 0.80); }
+body.light .back-btn:hover { color: var(--red); border-color: var(--red); background: rgba(244, 18, 18, 0.06); }
+
+body.light .panel { background: rgba(255, 255, 255, 0.95); border-color: rgba(15, 23, 42, 0.12); box-shadow: 0 4px 20px rgba(15, 23, 42, 0.03); }
+body.light .panel::before { background: linear-gradient(90deg, transparent, rgba(15, 23, 42, 0.05), transparent); }
+body.light .panel-title { color: #64748b; }
+body.light .panel-title::after { background: rgba(15, 23, 42, 0.1); }
+
+body.light .field label { color: #0f172a; font-weight: 800; }
+body.light .field input[type="text"], body.light .field textarea, body.light .field select { background: #fff; color: #0f172a; border-color: rgba(15, 23, 42, 0.2); }
+body.light .field input:focus, body.light .field textarea:focus, body.light .field select:focus { border-color: rgba(244, 18, 18, 0.55); background: rgba(244, 18, 18, 0.04); box-shadow: 0 0 0 3px rgba(244, 18, 18, 0.10); }
+body.light .field select option { background-color: #ffffff; color: #0f172a; }
+body.light .field input[type=range] { background: rgba(15, 23, 42, 0.1); }
+
+body.light .theme-card { background: #fff; border-color: rgba(15, 23, 42, 0.15); }
+body.light .theme-card:hover { border-color: rgba(244, 18, 18, 0.4); background: rgba(244, 18, 18, 0.04); }
+body.light .theme-card.active { background: rgba(244, 18, 18, 0.08); border-color: #dc2626; box-shadow: 0 0 10px rgba(220, 38, 38, 0.1); }
+body.light .theme-card .tc-name { color: #475569; }
+body.light .theme-card.active .tc-name { color: #dc2626; }
+
+body.light .custom-colors-wrap { background: #f8fafc; border-color: rgba(15, 23, 42, 0.12); }
+body.light .color-field { background: #fff; border-color: rgba(15, 23, 42, 0.15); }
+body.light .color-field input[type="color"]::-webkit-color-swatch { border-color: rgba(15, 23, 42, 0.2); }
+body.light .color-field label { color: #475569; }
+body.light .cc-section-label { color: #0f172a; }
+
+body.light .link-item { background: #f8fafc; border-color: rgba(15, 23, 42, 0.12); box-shadow: 0 2px 8px rgba(15, 23, 42, 0.02); }
+body.light .link-item:hover { border-color: rgba(15, 23, 42, 0.25); }
+body.light .drag-handle { color: #94a3b8; }
+body.light .add-link-btn { border-color: rgba(15, 23, 42, 0.2); color: #475569; }
+body.light .add-link-btn:hover { border-color: var(--red); color: #dc2626; background: rgba(244, 18, 18, 0.05); }
+
+body.light .gen-box { background: #fef2f2; border-color: #fca5a5; }
+body.light .gen-box .field label { color: #991b1b; }
+body.light .gen-box .field input { background: #fff; border-color: #fca5a5; }
+body.light .gen-box .field p { color: #b91c1c !important; }
+body.light .url-box { background: #fff; border-color: #fca5a5; }
+body.light .url-copy-btn { background: #fee2e2; color: #b91c1c; }
+body.light .url-copy-btn:hover { background: #fca5a5; color: #7f1d1d; }
+body.light .qr-dl-btn { border-color: #fca5a5; color: #b91c1c; }
+body.light .qr-dl-btn:hover { background: #fee2e2; border-color: #f87171; color: #7f1d1d; }
+
+body.light .disclaimer{ background: rgba(234, 88, 12, 0.08); border-color: rgba(234, 88, 12, 0.25); color: #9a3412; }
+body.light .disclaimer strong{ color: #7c2d12; }
+
+body.light .legal-box { background: rgba(245,158,11,0.08); border-color: rgba(217,119,6,0.3); }
+body.light .legal-box h3 { color: #78350f; }
+body.light .legal-box p { color: #92400e; }
+
+body.light .faq-section { border-top-color: rgba(15, 23, 42, 0.1); }
+body.light .faq-item { background: #ffffff; border-color: rgba(15, 23, 42, 0.12); box-shadow: 0 2px 8px rgba(15, 23, 42, 0.03); }
+body.light .faq-q { color: #0f172a; }
+body.light .faq-q:hover { color: var(--red); }
+body.light .faq-icon { color: #64748b; }
+body.light .faq-a { color: #334155; }
+body.light .faq-a strong { color: #0f172a; }
+
+body.light footer { background: rgba(248, 250, 252, 0.95); border-top-color: rgba(15, 23, 42, 0.1); color: #334155; }
+body.light .footer-logo { color: #0f172a; }
+body.light footer p { color: #64748b !important; }
+
+body.light .theme-switch-track { background: linear-gradient(135deg, rgba(244, 18, 18, 0.14), rgba(200, 30, 30, 0.08)); border-color: rgba(244, 18, 18, 0.32); box-shadow: inset 0 1px 3px rgba(244, 18, 18, 0.10); }
+body.light .theme-switch-track:hover { border-color: rgba(244, 18, 18, 0.50); box-shadow: inset 0 1px 3px rgba(244, 18, 18, 0.10), 0 0 10px rgba(244, 18, 18, 0.15); }
+body.light .theme-switch-knob { transform: translateX(24px); background: radial-gradient(circle at 38% 34%, #f8f9ff, #dde3f0 55%, #b8c4d8); box-shadow: 0 1px 5px rgba(0, 0, 0, 0.22), 0 0 8px rgba(180, 60, 60, 0.18); font-size: 14px !important; }
+
+/* Light Mode Glassmorphism Toast Override */
+body.light .toast {
+  background: rgba(255, 255, 255, 0.85); border-color: rgba(15, 23, 42, 0.15); color: #0f172a;
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.15), inset 0 1px 0 rgba(255,255,255,0.6);
+}
+body.light .toast.toast-error { 
+  background: rgba(254, 226, 226, 0.95); border-color: rgba(248, 113, 113, 0.5); color: #991b1b; 
+  box-shadow: 0 16px 40px rgba(220, 38, 38, 0.15), inset 0 1px 0 rgba(255,255,255,0.6);
+}
+</style>
+</head>
+<body>
+
+<div id="builder-container">
+  
+  <div class="bg-scene" id="bg-scene" aria-hidden="true">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <nav class="main-nav">
+    <div class="logo">
+      <a href="https://tradesala.com" target="_blank" rel="noopener noreferrer" style="text-decoration:none;">
+        <img src="https://play-lh.googleusercontent.com/ThjEPb9ot5r-KBDojyAzkmatXCBrHhs9B4CISXN6L2XXHCuoABKntWDq_2HBnRH3UQ=w480-h960-rw" alt="Tradesala" style="width:34px;height:34px;border-radius:14px;object-fit:contain;background:white;box-shadow:0 0 18px rgba(244,18,18,0.35);display:block;">
+      </a>
+      <div class="logo-text">Toolkit by <span>Tradesala</span></div>
+    </div>
+    <div style="display:flex;align-items:center;gap:10px">
+      <button class="theme-switch" id="theme-btn" onclick="toggleTheme()" title="Toggle light / dark mode" aria-label="Toggle light / dark mode">
+        <div class="theme-switch-track">
+          <div class="theme-switch-knob" id="theme-knob">☀️</div>
+        </div>
+      </button>
+      <a href="../index.html" class="back-btn">← All Tools</a>
+    </div>
+  </nav>
+
+  <div class="page-inner" id="app-builder">
+    <div class="tool-header">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="https://tradesala.com" target="_blank" rel="noopener noreferrer">Tradesala</a> <span>›</span>
+        <a href="../index.html">Vendor Tools</a> <span>›</span>
+        <span>Bio Link Builder</span>
+      </nav>
+      <h1>Bio Link <span>Builder</span></h1>
+      <p>Create a stunning, high-converting link page for your brand in seconds. 100% Free. Zero database.</p>
+    </div>
+
+    <div class="tool-wrap">
+      <div class="panel">
+        <div class="panel-title">Profile Setup</div>
+        
+        <div class="field">
+          <label><span>Profile Picture URL or Upload</span> <span style="opacity:0.5;font-weight:400;text-transform:none">Max 2MB</span></label>
+          <div class="pic-row">
+            <input type="text" id="in-pic" placeholder="e.g. https://instagram.com/.../pic.jpg" oninput="updatePreview()">
+            <label class="pic-upload-btn">
+              Upload
+              <input type="file" accept="image/jpeg, image/png, image/webp" onchange="handleImageUpload(this)">
+            </label>
+          </div>
+        </div>
+        <div class="field">
+          <label>Brand Name</label>
+          <input type="text" id="in-name" placeholder="e.g. Your Store Name" oninput="updatePreview()">
+        </div>
+        <div class="field">
+          <label>Short Bio</label>
+          <textarea id="in-bio" placeholder="e.g. Welcome to our official store! Shop our latest drops below." oninput="updatePreview()"></textarea>
+        </div>
+        
+        <div class="field" style="margin-top:28px">
+          <label style="margin-bottom:12px">Select Design Theme</label>
+          <div class="theme-grid">
+            <div class="theme-card active" onclick="setTheme('theme-dark', this)">
+              <div class="tc-circle" style="background:#0a0a0c; border-color:#333"></div>
+              <div class="tc-name">Modern Dark</div>
+            </div>
+            <div class="theme-card" onclick="setTheme('theme-light', this)">
+              <div class="tc-circle" style="background:#f8fafc; border-color:#cbd5e1"></div>
+              <div class="tc-name">Clean Light</div>
+            </div>
+            <div class="theme-card" onclick="setTheme('theme-glass', this)">
+              <div class="tc-circle" style="background:linear-gradient(-45deg,#ee7752,#e73c7e,#23a6d5); border-color:#fff"></div>
+              <div class="tc-name">Glassmorphism</div>
+            </div>
+            <div class="theme-card" onclick="setTheme('theme-neo', this)">
+              <div class="tc-circle" style="background:#ffeb3b; border:2px solid #000"></div>
+              <div class="tc-name">Neobrutalism</div>
+            </div>
+            <div class="theme-card" onclick="setTheme('theme-brand', this)">
+              <div class="tc-circle" style="background:var(--red); border-color:#fff"></div>
+              <div class="tc-name">Tradesala</div>
+            </div>
+            <div class="theme-card" onclick="setTheme('theme-cyber', this)">
+              <div class="tc-circle" style="background:#120422; border-color:#f0f"></div>
+              <div class="tc-name">Cyberpunk</div>
+            </div>
+            <div class="theme-card" onclick="setTheme('theme-pastel', this)">
+              <div class="tc-circle" style="background:#fdf2f8; border-color:#fbcfe8"></div>
+              <div class="tc-name">Pastel Dream</div>
+            </div>
+            <div class="theme-card" onclick="setTheme('theme-mono', this)">
+              <div class="tc-circle" style="background:#fff; border-color:#000"></div>
+              <div class="tc-name">Minimal Mono</div>
+            </div>
+            <div class="theme-card" onclick="setTheme('theme-ocean', this)">
+              <div class="tc-circle" style="background:linear-gradient(180deg, #0f172a, #0284c7); border-color:#38bdf8"></div>
+              <div class="tc-name">Ocean Gradient</div>
+            </div>
+            <div class="theme-card" onclick="setTheme('theme-sunset', this)">
+              <div class="tc-circle" style="background:linear-gradient(135deg, #f59e0b, #f43f5e); border-color:#fff"></div>
+              <div class="tc-name">Sunset Vibe</div>
+            </div>
+            <div class="theme-card" onclick="setTheme('theme-forest', this)">
+              <div class="tc-circle" style="background:linear-gradient(135deg, #14532d, #064e3b); border-color:#34d399"></div>
+              <div class="tc-name">Forest Glow</div>
+            </div>
+            <div class="theme-card" onclick="setTheme('theme-custom', this)">
+              <div class="tc-circle" style="background:conic-gradient(red, yellow, lime, aqua, blue, magenta, red); border-color:#fff"></div>
+              <div class="tc-name">🎨 Custom Theme</div>
+            </div>
+          </div>
+
+          <div class="custom-colors-wrap" id="custom-colors-ui">
+            
+            <div class="cc-section-label">Brand Colors</div>
+            <div class="cc-grid">
+              <div class="color-field"><input type="color" id="c-bg" value="#1a1a1a" oninput="updateCustomColors()"><label>Background</label></div>
+              <div class="color-field"><input type="color" id="c-tx" value="#ffffff" oninput="updateCustomColors()"><label>Text Color</label></div>
+              <div class="color-field"><input type="color" id="c-btn" value="#ffffff" oninput="updateCustomColors()"><label>Button Color</label></div>
+              <div class="color-field"><input type="color" id="c-btn-tx" value="#000000" oninput="updateCustomColors()"><label>Button Text</label></div>
+              <div class="color-field"><input type="color" id="c-img-bc" value="#ffffff" oninput="updateCustomColors()"><label>Img Border</label></div>
+            </div>
+
+            <div class="cc-section-label" style="margin-top:10px">Typography & Shapes</div>
+            <div class="field" style="margin-bottom:8px">
+              <label>Font Style</label>
+              <select id="c-font" onchange="updateCustomColors()">
+                <option value="'Figtree', sans-serif">Modern (Figtree)</option>
+                <option value="'Outfit', sans-serif">Bold & Clean (Outfit)</option>
+                <option value="Arial, Helvetica, sans-serif">Classic (Arial)</option>
+                <option value="'Courier New', monospace">Typewriter (Monospace)</option>
+                <option value="'Times New Roman', serif">Editorial (Serif)</option>
+              </select>
+            </div>
+            
+            <div class="cc-grid" style="grid-template-columns:1fr 1fr; margin-bottom:8px">
+              <div class="field" style="margin-bottom:0">
+                <label>Button Shape</label>
+                <select id="c-btn-rad" onchange="updateCustomColors()">
+                  <option value="12px">Rounded Rectangle</option>
+                  <option value="100px">Pill Shape</option>
+                  <option value="0px">Sharp Square</option>
+                </select>
+              </div>
+              <div class="field" style="margin-bottom:0">
+                <label>Button Style</label>
+                <select id="c-btn-sty" onchange="updateCustomColors()">
+                  <option value="solid">Solid Fill</option>
+                  <option value="outline">Outline</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="cc-grid" style="grid-template-columns:1fr 1fr; align-items:end">
+              <div class="field" style="margin-bottom:0">
+                <label>Image Shape</label>
+                <select id="c-img-rad" onchange="updateCustomColors()">
+                  <option value="50%">Circle</option>
+                  <option value="20px">Rounded Square</option>
+                  <option value="0px">Sharp Square</option>
+                </select>
+              </div>
+              <div class="field" style="margin-bottom:0">
+                <label>Image Border Size (<span id="c-bw-val">0</span>px)</label>
+                <input type="range" id="c-img-bw" min="0" max="10" value="0" oninput="v('c-bw-val').textContent=this.value; updateCustomColors()">
+              </div>
+            </div>
+            
+          </div>
+        </div>
+
+        <div class="panel-title" style="margin-top:40px">Your Links <span style="font-size:10px;text-transform:none;opacity:0.6;font-weight:400;margin-left:auto">(Drag ≡ to reorder)</span></div>
+        <div class="link-list" id="link-list">
+          </div>
+        <button class="add-link-btn" onclick="addLink()" id="add-link-btn">+ Add Another Link</button>
+
+        <div class="disclaimer">
+          <strong>Notice:</strong> Because this tool uses a "Zero-Database" architecture, all your data is stored inside the URL itself. If you upload an image, it compresses it drastically to try and fit. If generation fails, use a direct Image URL instead of uploading.
+        </div>
+
+        <div class="gen-box">
+          <button class="gen-btn" id="btn-generate" onclick="generateLink()">Generate Smart Link</button>
+          
+          <div class="res-container" id="res-box">
+            <div class="url-box">
+              <input type="text" id="out-url" readonly>
+              <button class="url-copy-btn" onclick="copyUrl()">Copy</button>
+            </div>
+            
+            <div class="qr-wrapper">
+              <div id="qr-code"></div>
+            </div>
+            <br>
+            <a href="#" id="qr-dl-link" class="qr-dl-btn" download="bio-link-qr.png">⬇ Download QR Code</a>
+            <p style="font-size:11px;opacity:0.6;margin-top:12px;line-height:1.4">Print this QR code on packaging inserts to drive buyers directly to your links.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="preview-wrap">
+        <div class="phone-mockup">
+          <div class="phone-notch"></div>
+          <div class="preview-content bio-page theme-dark" id="preview-page">
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="legal-box">
+      <h3>Legal Disclaimer</h3>
+      <p>Tradesala provides this tool "as-is" free of charge. Due to the decentralized "Zero-Database" architecture, we do not store, host, monitor, or control the URLs generated by users. Users are strictly and solely responsible for the content they link to. Any misuse, spamming, or illicit content will be subject to the terms of service of the third-party URL shortener (is.gd) and may result in the links being permanently disabled by their network without notice.</p>
+    </div>
+
+    <section class="faq-section" id="faq" aria-label="Frequently Asked Questions">
+      <div class="faq-hdr">Frequently Asked <span>Questions</span></div>
+      <p class="faq-sub">How the free Bio Link Builder works.</p>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">Is this really free? Where is the catch?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><p><strong>It is 100% free.</strong> There are no premium tiers, no hidden fees, and no signups required. We built this as a free tool to help Indian e-commerce sellers build their brands.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">How does it work without an account or database?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><p>This tool uses a clever engineering method called <strong>Data-in-URL</strong>. When you create your profile, we compress all your links and text into a tiny code and hide it inside your final URL. When a customer clicks your link, the browser reads the code and instantly builds your page. No server required.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">Can I track how many clicks my link gets?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><p>Since this is a 100% privacy-focused, zero-database tool, we do not track clicks or analytics. If you need tracking, we recommend pasting your generated link into your own analytics tool or URL tracker.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">What happens if I have more than 5 links?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><p>To ensure your data fits perfectly within the URL without breaking, we have set a hard limit of 5 links. This keeps your bio link fast, reliable, and compatible with all social media platforms.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">Can I edit or change my link after creating it?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><p>Yes! Since the data lives inside the link itself, you cannot edit the "live" link. However, you can paste your current link back into your browser to load the builder, update your details, and generate a new Smart Link to update your Instagram bio.</p></div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="share-pill" id="share-pill">
+    <div class="share-options">
+      <button class="share-btn share-lnk" onclick="shareToolLink()" title="Copy link">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" stroke="white" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" stroke="white" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+      <button class="share-btn share-ig" onclick="shareInstagram()" title="Share on Instagram">
+        <svg viewBox="0 0 24 24" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" fill="white" />
+        </svg>
+      </button>
+      <button class="share-btn share-x" onclick="shareX()" title="Share on X">
+        <svg viewBox="0 0 24 24" width="15" height="15" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.747l7.73-8.835L1.254 2.25H8.08l4.261 5.635 5.903-5.635zm-1.161 17.52h1.833L7.084 4.126H5.117z" fill="white" />
+        </svg>
+      </button>
+      <button class="share-btn share-fb" onclick="shareFacebook()" title="Share on Facebook">
+        <svg viewBox="0 0 24 24" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+          <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" fill="white" />
+        </svg>
+      </button>
+    </div>
+    <button class="share-trigger" onclick="toggleShare()" title="Share this tool">
+      <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="18" cy="5" r="3" stroke="white" stroke-width="2" fill="none" />
+        <circle cx="6" cy="12" r="3" stroke="white" stroke-width="2" fill="none" />
+        <circle cx="18" cy="19" r="3" stroke="white" stroke-width="2" fill="none" />
+        <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" stroke="white" stroke-width="2" />
+        <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" stroke="white" stroke-width="2" />
+      </svg>
+    </button>
+  </div>
+
+  <footer>
+    <div class="footer-logo">Toolkit by <span>Tradesala</span></div>
+    <p style="margin-top:4px;font-size:13px;color:rgba(255,255,255,0.75)">Made with ❤️ from Chennai</p>
+    <p style="margin-top:6px;font-size:13px;color:rgba(255,255,255,0.75)">Built for Indian sellers by <a
+        href="https://tradesala.com" target="_blank" rel="noopener noreferrer">Tradesala</a>  ·  Free, always.</p>
+    <p style="margin-top:8px;font-size:12px;color:var(--text-3)">© 2026 Tradesala Technologies Pvt Ltd · Chennai, India
+    </p>
+    <p style="margin-top:8px;font-size:12px;color:var(--text-3)">
+      <a href="../terms-and-conditions.html"
+        style="color:var(--text-3);text-decoration:underline;text-underline-offset:2px">Terms & Conditions</a>
+       · 
+      <a href="../privacy-policy.html"
+        style="color:var(--text-3);text-decoration:underline;text-underline-offset:2px">Privacy Policy</a>
+    </p>
+    <p style="margin-top:8px;font-size:12px;color:var(--text-3)">All rights reserved. Unauthorised copying or
+      redistribution of these tools is prohibited.</p>
+  </footer>
+</div>
+
+<div id="app-viewer">
+  <div class="bio-page" id="live-page">
+    </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+'use strict';
+
+/* ── THEME TOGGLE (Builder Only) ── */
+var THEME_KEY = 'ts_toolkit_theme';
+var KNOB_SUN = '☀️';
+var KNOB_MOON = '🌑';
+
+function toggleTheme() {
+  var isLight = document.body.classList.toggle('light');
+  var tk = document.getElementById('theme-knob');
+  if(tk) tk.textContent = isLight ? KNOB_MOON : KNOB_SUN;
+  try { localStorage.setItem(THEME_KEY, isLight ? 'light' : 'dark'); } catch (e) { }
+}
+
+(function initTheme() {
+  if(window.location.hash && window.location.hash.startsWith('#d=')) return;
+  try {
+    if (localStorage.getItem(THEME_KEY) === 'light') {
+      document.body.classList.add('light');
+      document.addEventListener('DOMContentLoaded', function() {
+          var knob = document.getElementById('theme-knob');
+          if (knob) knob.textContent = KNOB_MOON;
+      });
+    }
+  } catch (e) { }
+})();
+
+/* ── SHARE PILL ── */
+var SHARE_URL = 'https://tools.tradesala.store/tools/bio-link.html';
+var SHARE_TEXT = 'Free Bio Link Builder by Tradesala';
+
+function toggleShare() { document.getElementById('share-pill').classList.toggle('open'); }
+function shareFacebook() { window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(SHARE_URL), '_blank', 'width=600,height=400'); }
+function shareX() { window.open('https://twitter.com/intent/tweet?url=' + encodeURIComponent(SHARE_URL) + '&text=' + encodeURIComponent(SHARE_TEXT), '_blank', 'width=600,height=400'); }
+function shareInstagram() { shareCopyLink('Copied! Open Instagram and paste in your story or bio link.'); }
+
+function shareToolLink() {
+  var message = 'Link copied to clipboard!';
+  var done = function () {
+    var btn = document.querySelector('.share-btn.share-lnk');
+    var origTitle = btn ? btn.title : '';
+    if (btn) btn.title = 'Copied!';
+    setTimeout(function () { if (btn) btn.title = origTitle; }, 2000);
+    if (btn) { btn.style.background = 'rgba(52,211,153,0.6)'; setTimeout(function () { btn.style.background = ''; }, 1200); }
+  };
+  if (navigator.clipboard) {
+    navigator.clipboard.writeText(SHARE_URL).then(done).catch(fallbackCopy);
+  } else { fallbackCopy(); }
+  function fallbackCopy() {
+    var ta = document.createElement('textarea'); ta.value = SHARE_URL;
+    document.body.appendChild(ta); ta.select(); try { document.execCommand('copy'); } catch (e) { }
+    document.body.removeChild(ta); done();
+  }
+}
+
+document.addEventListener('click', function (e) {
+  var pill = document.getElementById('share-pill');
+  if (pill && !pill.contains(e.target)) pill.classList.remove('open');
+});
+
+/* ── FAQ ── */
+function toggleFaq(btn){
+  var item = btn.closest('.faq-item');
+  var isOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(function(el){
+    el.classList.remove('open');
+    el.querySelector('.faq-q').setAttribute('aria-expanded','false');
+  });
+  if(!isOpen){
+    item.classList.add('open');
+    btn.setAttribute('aria-expanded','true');
+  }
+}
+
+/* ── STATE MANAGEMENT ── */
+let state = {
+  n: '', 
+  b: '', 
+  p: 'https://play-lh.googleusercontent.com/ThjEPb9ot5r-KBDojyAzkmatXCBrHhs9B4CISXN6L2XXHCuoABKntWDq_2HBnRH3UQ', 
+  t: 'theme-dark',
+  cc: { bg: '#1a1a1a', tx: '#ffffff', bb: '#ffffff', bt: '#000000', bc: '#ffffff', f: "'Figtree', sans-serif", br: '12px', bs: 'solid', ir: '50%', bw: '0' }, 
+  l: [             
+    { t: '', u: '' }
+  ]
+};
+
+let qrInstance = null;
+let dragSrcIdx = null;
+
+function v(id){ return document.getElementById(id); }
+
+/* Updated Glassmorphism Toast Function */
+function toastMsg(msg, isError = false) {
+  let t = v('toast'); 
+  t.textContent = msg; 
+  if(isError) {
+    t.classList.add('toast-error');
+  } else {
+    t.classList.remove('toast-error');
+  }
+  t.classList.add('show');
+  
+  setTimeout(() => {
+    t.classList.remove('show');
+    setTimeout(() => { t.classList.remove('toast-error'); }, 400); // clear class after fade animation
+  }, 3500);
+}
+
+/* ── RATE LIMITING LOGIC ── */
+function checkRateLimit() {
+  const LIMIT = 10;
+  const today = new Date().toDateString();
+  let usageData = { date: today, count: 0 };
+
+  try {
+    const stored = localStorage.getItem('ts_bio_limit');
+    if (stored) {
+      const parsed = JSON.parse(stored);
+      if (parsed.date === today) {
+        usageData.count = parsed.count;
+      }
+    }
+  } catch(e) {}
+
+  if (usageData.count >= LIMIT) {
+    return false;
+  }
+
+  usageData.count++;
+  try {
+    localStorage.setItem('ts_bio_limit', JSON.stringify(usageData));
+  } catch(e) {}
+
+  return true;
+}
+
+/* ── BUILDER LOGIC ── */
+function setTheme(themeClass, btn) {
+  state.t = themeClass;
+  document.querySelectorAll('.theme-card').forEach(c => c.classList.remove('active'));
+  btn.classList.add('active');
+  
+  if(themeClass === 'theme-custom') {
+    v('custom-colors-ui').classList.add('show');
+  } else {
+    v('custom-colors-ui').classList.remove('show');
+  }
+  updatePreview();
+}
+
+function updateCustomColors() {
+  state.cc.bg = v('c-bg').value;
+  state.cc.tx = v('c-tx').value;
+  state.cc.bb = v('c-btn').value;
+  state.cc.bt = v('c-btn-tx').value;
+  state.cc.bc = v('c-img-bc').value;
+  state.cc.f  = v('c-font').value;
+  state.cc.br = v('c-btn-rad').value;
+  state.cc.bs = v('c-btn-sty').value;
+  state.cc.ir = v('c-img-rad').value;
+  state.cc.bw = v('c-img-bw').value;
+  updatePreview();
+}
+
+function handleImageUpload(input) {
+  const file = input.files[0];
+  if(!file) return;
+  
+  if(!file.type.startsWith('image/')) {
+    toastMsg('⚠️ Please upload a valid image file (JPG, PNG, WEBP).', true);
+    input.value = '';
+    return;
+  }
+
+  const maxSizeMB = 2;
+  if (file.size > maxSizeMB * 1024 * 1024) {
+    toastMsg(`⚠️ File too large (${(file.size / 1024 / 1024).toFixed(1)}MB). Max accepted size is ${maxSizeMB}MB. Please upload a smaller image or paste a URL.`, true);
+    input.value = '';
+    return;
+  }
+
+  const reader = new FileReader();
+  reader.onload = function(e) {
+    const img = new Image();
+    img.onload = function() {
+      const cvs = document.createElement('canvas');
+      const ctx = cvs.getContext('2d');
+      const MAX_SIZE = 96; 
+      
+      let w = img.width;
+      let h = img.height;
+      if(w > h) { h *= MAX_SIZE/w; w = MAX_SIZE; }
+      else { w *= MAX_SIZE/h; h = MAX_SIZE; }
+      
+      cvs.width = w; cvs.height = h;
+      ctx.drawImage(img, 0, 0, w, h);
+      
+      const b64 = cvs.toDataURL('image/jpeg', 0.5);
+      
+      v('in-pic').value = b64;
+      updatePreview();
+    }
+    img.src = e.target.result;
+  }
+  reader.readAsDataURL(file);
+}
+
+function renderLinksEditor() {
+  const box = v('link-list');
+  box.innerHTML = '';
+  state.l.forEach((link, idx) => {
+    box.innerHTML += `
+      <div class="link-item" draggable="true" ondragstart="dragStart(event, ${idx})" ondragover="dragOver(event)" ondrop="drop(event, ${idx})" ondragend="dragEnd(event)">
+        <div class="drag-handle" title="Drag to reorder">≡</div>
+        <button class="remove-link" onclick="removeLink(${idx})" title="Remove Link">×</button>
+        <div class="field" style="margin-bottom:10px">
+          <label>Button Title</label>
+          <input type="text" value="${esc(link.t)}" oninput="updateLinkData(${idx}, 't', this.value)" placeholder="e.g. Shop Now">
+        </div>
+        <div class="field" style="margin-bottom:0">
+          <label>Destination URL</label>
+          <input type="text" value="${esc(link.u)}" oninput="updateLinkData(${idx}, 'u', this.value)" placeholder="https://...">
+        </div>
+      </div>
+    `;
+  });
+
+  const addBtn = v('add-link-btn');
+  if(state.l.length >= 5) {
+    addBtn.style.display = 'none';
+  } else {
+    addBtn.style.display = 'block';
+  }
+
+  updatePreview();
+}
+
+function dragStart(e, idx) {
+  dragSrcIdx = idx;
+  e.dataTransfer.effectAllowed = 'move';
+  e.dataTransfer.setData('text/plain', idx);
+  setTimeout(() => e.target.classList.add('dragging'), 0); 
+}
+
+function dragOver(e) {
+  e.preventDefault();
+  e.dataTransfer.dropEffect = 'move';
+}
+
+function drop(e, dropIdx) {
+  e.preventDefault();
+  if(dragSrcIdx === null || dragSrcIdx === dropIdx) return;
+  const movedItem = state.l.splice(dragSrcIdx, 1)[0];
+  state.l.splice(dropIdx, 0, movedItem);
+  renderLinksEditor();
+}
+
+function dragEnd(e) {
+  e.target.classList.remove('dragging');
+  dragSrcIdx = null;
+}
+
+function addLink() {
+  if (state.l.length >= 5) {
+    toastMsg("⚠️ Maximum 5 links allowed to ensure the URL remains safe and unbroken.", true);
+    return;
+  }
+  state.l.push({ t: '', u: '' });
+  renderLinksEditor();
+}
+
+function removeLink(idx) {
+  state.l.splice(idx, 1);
+  renderLinksEditor();
+}
+
+function updateLinkData(idx, key, val) {
+  state.l[idx][key] = val;
+  updatePreview();
+}
+
+function gatherState() {
+  state.n = v('in-name').value.trim();
+  state.b = v('in-bio').value.trim();
+  state.p = v('in-pic').value.trim();
+}
+
+function updatePreview() {
+  gatherState();
+  drawBioPage('preview-page');
+}
+
+function esc(s){ return String(s||'').replace(/&/g,'&').replace(/</g,'<').replace(/>/g,'>').replace(/"/g,'"'); }
+
+function drawBioPage(containerId) {
+  const container = v(containerId);
+  container.className = `preview-content bio-page ${state.t}`;
+  
+  if(state.t === 'theme-custom' && state.cc) {
+    container.style.setProperty('--c-bg', state.cc.bg);
+    container.style.setProperty('--c-tx', state.cc.tx);
+    container.style.setProperty('--c-btn-bg', state.cc.bs === 'outline' ? 'transparent' : state.cc.bb);
+    container.style.setProperty('--c-btn-border', `2px solid ${state.cc.bb}`);
+    container.style.setProperty('--c-btn-tx', state.cc.bt);
+    container.style.setProperty('--c-img-bc', state.cc.bc || 'transparent');
+    container.style.setProperty('--c-f', state.cc.f || "'Figtree'");
+    container.style.setProperty('--c-br', state.cc.br || '12px');
+    container.style.setProperty('--c-ir', state.cc.ir || '50%');
+    container.style.setProperty('--c-bw', (state.cc.bw || '0') + 'px');
+  } else {
+    container.removeAttribute('style'); 
+  }
+  
+  const isViewer = document.body.classList.contains('viewer-mode');
+  
+  const d_n = state.n || (isViewer ? '' : 'Your Store Name');
+  const d_b = state.b || (isViewer ? '' : 'Welcome to our official store! Shop our latest drops below.');
+  
+  let html = '';
+  if(state.p) html += `<img src="${esc(state.p)}" class="bio-pic" alt="Profile" onerror="this.style.display='none'">`;
+  if(d_n) html += `<h1 class="bio-name">${esc(d_n)}</h1>`;
+  if(d_b) html += `<p class="bio-desc">${esc(d_b)}</p>`;
+  
+  html += `<div class="bio-links">`;
+  
+  let hasValidLinks = state.l.some(link => link.t || link.u);
+  if (!hasValidLinks && !isViewer) {
+      html += `<a href="#" class="bio-btn">Example Link 1</a>`;
+      html += `<a href="#" class="bio-btn">Example Link 2</a>`;
+  } else {
+      state.l.forEach(link => {
+        if(link.t || link.u) {
+          const text = link.t || 'Untitled Link';
+          let safeUrl = link.u ? (link.u.startsWith('http') || link.u.startsWith('mailto:') || link.u.startsWith('tel:') ? esc(link.u) : 'https://' + esc(link.u)) : '#';
+          html += `<a href="${safeUrl}" target="_blank" rel="noopener noreferrer" class="bio-btn">${esc(text)}</a>`;
+        }
+      });
+  }
+  
+  html += `</div>`;
+  html += `<a href="https://tools.tradesala.store/tools/bio-link.html" target="_blank" class="watermark">⚡ POWERED BY TRADESALA</a>`;
+  
+  container.innerHTML = html;
+}
+
+/* ── LINK & QR GENERATION ── */
+function generateLink() {
+  gatherState();
+  
+  /* Validate Form Data Before Generation */
+  let validLinks = 0;
+  for (let i = 0; i < state.l.length; i++) {
+    const link = state.l[i];
+    const hasTitle = link.t.trim() !== '';
+    const hasUrl = link.u.trim() !== '';
+    
+    if (hasTitle || hasUrl) {
+      if (!hasTitle) { toastMsg('⚠️ Link #' + (i+1) + ' is missing a Title.', true); return; }
+      if (!hasUrl) { toastMsg('⚠️ Link #' + (i+1) + ' is missing a URL.', true); return; }
+      
+      // Basic URL verification check
+      const urlPattern = /^(https?:\/\/)?([\w-]+\.)+[\w-]+(\/[\w-./?%&=]*)?$/i;
+      const isSpecial = link.u.startsWith('mailto:') || link.u.startsWith('tel:') || link.u.startsWith('wa.me/');
+      if (!urlPattern.test(link.u) && !isSpecial) {
+        toastMsg('⚠️ Invalid URL format in Link #' + (i+1) + '. Try adding .com or .in', true); 
+        return;
+      }
+      validLinks++;
+    }
+  }
+  
+  if (validLinks === 0) {
+    toastMsg('⚠️ Please add at least one complete link (Title & URL) before generating.', true);
+    return;
+  }
+
+  /* Rate Limiting */
+  if (!checkRateLimit()) {
+    toastMsg('⏳ Daily limit reached. You can generate 10 links per day. Please try again tomorrow.', true);
+    return;
+  }
+
+  const btn = v('btn-generate');
+  btn.disabled = true;
+  btn.textContent = 'Compiling data...';
+  
+  const jsonStr = JSON.stringify(state);
+  const compressed = LZString.compressToEncodedURIComponent(jsonStr);
+  const longUrl = window.location.origin + window.location.pathname + '#d=' + compressed;
+  
+  if (longUrl.length > 7000) {
+    toastMsg("⚠️ URL is too large. Your uploaded image might still be too heavy. Please use a direct Image URL instead.", true);
+    btn.disabled = false;
+    btn.textContent = 'Generate Smart Link';
+    return;
+  }
+
+  btn.textContent = 'Contacting shortener API...';
+
+  const cbName = 'isgd_cb_' + Date.now();
+  window[cbName] = function(data) {
+    cleanupJsonp();
+    if(data.shorturl) {
+      showResult(data.shorturl);
+    } else {
+      toastMsg('⚠️ Failed to generate link. Please try again.', true);
+      btn.disabled = false;
+      btn.textContent = 'Generate Smart Link';
+    }
+  };
+
+  const script = document.createElement('script');
+  script.id = cbName;
+  
+  // THE CLOAK: This prevents the 'is.gd' API from seeing Tradesala.store as the referrer
+  script.referrerPolicy = "no-referrer"; 
+  script.src = `https://is.gd/create.php?format=json&url=${encodeURIComponent(longUrl)}&callback=${cbName}`;
+  
+  script.onerror = function() {
+    cleanupJsonp();
+    toastMsg('Network error. Providing full link.');
+    showResult(longUrl); 
+  };
+  
+  document.body.appendChild(script);
+
+  function cleanupJsonp() {
+    delete window[cbName];
+    const s = v(cbName);
+    if(s) s.remove();
+  }
+}
+
+function showResult(url) {
+  v('out-url').value = url;
+  v('res-box').style.display = 'block';
+  v('btn-generate').textContent = 'Link Generated!';
+  
+  generateQR(url);
+
+  setTimeout(() => {
+    v('btn-generate').disabled = false;
+    v('btn-generate').textContent = 'Update & Regenerate Link';
+  }, 2000);
+  copyUrl();
+}
+
+function copyUrl() {
+  const url = v('out-url').value;
+  if(!url) return;
+  navigator.clipboard.writeText(url).then(() => {
+    toastMsg('✅ Link copied to clipboard!');
+  }).catch(()=>{
+    toastMsg('Select and copy the link in the box.');
+  });
+}
+
+function generateQR(url) {
+  const qrBox = v('qr-code');
+  qrBox.innerHTML = ''; 
+  
+  if(typeof QRCode === 'undefined') {
+      toastMsg('⚠️ QR Generator failed to load.', true);
+      return;
+  }
+  
+  qrInstance = new QRCode(qrBox, {
+    text: url,
+    width: 160,
+    height: 160,
+    colorDark : "#000000",
+    colorLight : "#ffffff",
+    correctLevel : QRCode.CorrectLevel.M
+  });
+
+  setTimeout(() => {
+    const img = qrBox.querySelector('img');
+    if(img && img.src) {
+      v('qr-dl-link').href = img.src;
+    } else {
+      const cvs = qrBox.querySelector('canvas');
+      if(cvs) v('qr-dl-link').href = cvs.toDataURL("image/png");
+    }
+  }, 300); 
+}
+
+/* ── BOOTSTRAP (ROUTING) ── */
+function init() {
+  const hash = window.location.hash;
+  if(hash && hash.startsWith('#d=')) {
+    // === VIEWER MODE ===
+    document.body.classList.remove('light');
+    document.body.classList.add('viewer-mode');
+    v('builder-container').style.display = 'none';
+    
+    document.body.style.background = 'transparent'; 
+    document.body.style.minHeight = '0';
+    document.body.style.overflow = 'auto';
+
+    v('app-viewer').style.display = 'block';
+    
+    try {
+      const compressed = hash.substring(3);
+      const jsonStr = LZString.decompressFromEncodedURIComponent(compressed);
+      if(!jsonStr) throw new Error('Decompression failed');
+      state = JSON.parse(jsonStr); 
+      
+      const viewerBody = v('app-viewer');
+      if(state.t === 'theme-light' || state.t === 'theme-mono') viewerBody.style.background = '#ffffff';
+      else if(state.t === 'theme-brand') viewerBody.style.background = '#07070f';
+      else if(state.t === 'theme-neo') viewerBody.style.background = '#f4f4f0';
+      else if(state.t === 'theme-pastel') viewerBody.style.background = '#fdf2f8';
+      else if(state.t === 'theme-cyber') viewerBody.style.background = '#120422';
+      else if(state.t === 'theme-forest') viewerBody.style.background = 'linear-gradient(135deg, #064e3b, #022c22)';
+      else if(state.t === 'theme-custom' && state.cc) viewerBody.style.background = state.cc.bg;
+      else if(state.t === 'theme-glass' || state.t === 'theme-ocean' || state.t === 'theme-sunset') viewerBody.style.background = '#111'; 
+      else viewerBody.style.background = '#0a0a0c';
+
+      drawBioPage('live-page');
+    } catch (err) {
+      console.error(err);
+      alert('Link data is invalid. Redirecting to builder.');
+      window.location.hash = '';
+      window.location.reload();
+    }
+  } else {
+    // === BUILDER MODE ===
+    v('in-name').value = state.n;
+    v('in-bio').value = state.b;
+    
+    if(state.p) v('in-pic').value = state.p;
+    
+    if(state.cc) {
+      v('c-bg').value = state.cc.bg || '#1a1a1a';
+      v('c-tx').value = state.cc.tx || '#ffffff';
+      v('c-btn').value = state.cc.bb || '#ffffff';
+      v('c-btn-tx').value = state.cc.bt || '#000000';
+      v('c-img-bc').value = state.cc.bc || '#ffffff';
+      if(state.cc.f) v('c-font').value = state.cc.f;
+      if(state.cc.br) v('c-btn-rad').value = state.cc.br;
+      if(state.cc.bs) v('c-btn-sty').value = state.cc.bs;
+      if(state.cc.ir) v('c-img-rad').value = state.cc.ir;
+      if(state.cc.bw !== undefined) {
+        v('c-img-bw').value = state.cc.bw;
+        v('c-bw-val').textContent = state.cc.bw;
+      }
+    }
+    
+    document.querySelectorAll('.theme-card').forEach(c => {
+      if(c.getAttribute('onclick').includes(state.t)) {
+        c.classList.add('active');
+        if(state.t === 'theme-custom') v('custom-colors-ui').classList.add('show');
+      } else {
+        c.classList.remove('active');
+      }
+    });
+
+    renderLinksEditor();
+  }
+}
+
+// Run on load
+init();
+</script>
+</body>
+</html>
